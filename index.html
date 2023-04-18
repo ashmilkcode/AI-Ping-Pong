@@ -16,11 +16,27 @@
     </head>
     <body background="pingponggamebg.jpg">
         <center>
-            <h3 class="btn btn-primary heading">AI Ping Pong Game</h3>
-            <button class="btn btn-warning" data-toggle="model" data-target="#myModel">Instructions</button>
-            <button class="btn btn-success" onclick="startGame()" id="start">Play Ping Pong</button>
-            <h3 id="status" class="btn btn-primary"></h3>
+            <h3 class="btn btn-primary heading">AI Ping Pong Game - Created by Lakshmi</h3>
+            <button class="btn btn-warning" data-toggle="model" data-target="#myModel">❓ Instructions</button>
+            <button class="btn btn-success" onclick="startGame()" id="start">▶️ Play Ping Pong</button>
+            <h3 id="status" class="btn btn-primary">📊 Status: </h3>
             <div id="canvas"></div>
+            <button class="btn btn-danger" onclick="restart()" id="restart">🔄 Restart Game</button>
+
+            <div id="myModal" class="modal fade">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button class="close" data-dismiss="model">&times;</button>
+                      <h4>Instructions</h4>
+                        <div class="modal-body">
+                            <ol>
+                                <li>Use your nose to move the paddle up and down</li>
+                                <li>Make sure the ball bounces off your paddle and doesn't hit your side</li>
+                                <li>The ball's speed will get progressively faster</li>
+                            </ol>
+                        </div>
+                    </div>
         </center>
         <script src="main.js"></script>
     </body>
